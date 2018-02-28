@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ]
 
   let el = document.createElement('p');
-  el.innerHTML = "hi mom"
+  //el.innerHTML = "hi mom, I love " + elements[1].name;
+  el.innerHTML = `hi mom, I love ${elements[1].name}`;
   document.body.appendChild(el)
 })
