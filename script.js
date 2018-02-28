@@ -7,8 +7,17 @@ document.addEventListener('DOMContentLoaded', function () {
     { name: 'Neon', number: 10, symbol: 'Ne' }
   ]
 
-  let el = document.createElement('p');
+  let tableBody = document.querySelector('tbody');
+
+  let tableRow = document.createElement('tr');
+
+  tableRow.innerHTML = `<td>${elements[0].number}</td>
+                        <td>${elements[0].symbol}</td>
+                        <td>${elements[0].name}</td>`
+
+  tableBody.appendChild(tableRow)
+  // let el = document.createElement('p');
   //el.innerHTML = "hi mom, I love " + elements[1].name;
-  el.innerHTML = `hi mom, I love ${elements[1].name}`;
-  document.body.appendChild(el)
+  // el.innerHTML = `hi mom, I love ${elements[1].name}`;
+  // document.body.appendChild(el)
 })
